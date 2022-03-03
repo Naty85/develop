@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            display: grid;
+            color: rgb(242, 248, 242);
+            background-color: lightgray;
+            row-gap: 30px;
+            column-gap: 30px;
+            font-family: sans-serif;
+            grid-template-columns: [header-start] 20vh [heder-end]
+            grid-template-rows: 10% 15% 10% 1fr 10%;
+            grid-template-areas: 
+            "header header header header"
+            "aside project project bloggers"
+            "aside manufacturers brend recycling"
+            "aside content greenwashing ecobehivior"
+            "footer footer footer footer";
+                  }
+
+        .header{
+                padding: 1.5rem; 
+                background-color: dimgray; 
+                border: 1px darkgray solid;
+                grid-area:header;
+                grid-row: header-start;
+            }
+
+        
+        .manufacturers{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area:manufacturers;
+
+        }
+        .brend{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area: brend;
+
+        }
+
+        .recycling{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area:recycling;
+          
+        }
+
+        .aside{
+            display: flex;
+            padding:5px;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-items: start;
+            grid-area:aside;
+            
+        }
+
+        .greenwashing{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area: greenwashing;
+        }
+        .content{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area: content;
+            width: fit-content;
+        }
+        .ecobehivior{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area: ecobehivior;
+        }
+
+        .footer{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area:footer;
+        }
+
+        .bloggers{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area:bloggers;
+            ;
+
+        }
+
+        .project{
+            padding: 1.5rem;
+            background-color: dimgray;
+            border: 1px darkgray solid;
+            align-content: space-between;
+            grid-area:project;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h>Экологичная косметика</h>
+    <div class="box1">
+        <div class="header">Шапка</div>
+        <div class="manufacturers">Производители</div>
+        <div class="brend">Бренды</div>
+        <div class="recycling">Переработка</div>
+        <div class="aside">Боковая часть</div>
+        <div class="content">
+            <h>Основной контент</h>
+            <p>Эко-косметика: что это и каким брендам действительно можно доверять
+            Тренд на натуральную и органическую косметику растет, а вместе с ним и количество новых брендов, информации и, увы, гринвошинга. Разбираемся, какие марки заботятся об экологии не на словах, а на деле</p>
+            </div>
+        <div class="greenwashing">Гринвошинг</div>
+        <div class="ecobehivior">Экопривычки</div>
+        <div class="bloggers">Блогеры</div>
+        <div class="footer">Подвал</div>
+        <div class="project">
+            <h>Проекты</h>
+        <p><a href="https://www.laroche-posay.ru/eco-project?gclid=CjwKCAiA9tyQBhAIEiwA6tdCrDEx2eG-3VfsHUx86wgw4KFDBsS4wTEk7p62lbx8D-nNJOCUod84tRoClZoQAvD_BwE">Проект по переработке упаковки от косметики</p></div>
+
+    </div>
+
+    <div> <a href="https://www.figmacrush.com/designer-dashboard-free-figma-concept/">Ссылка на макет</a>
+    </div>
+
+</body>
+</html>

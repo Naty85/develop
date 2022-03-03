@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: salmon;
+            grid-area: header;
+        }
+
+        .sidebar {
+            background-color: red;
+            grid-area: sidebar;
+        }
+
+
+        .main {
+            background-color: green;
+            grid-area: main;
+        }
+
+        .footer {
+            background-color: indianred;
+            grid-area: footer;
+        }
+
+        .conteiner {
+            display: grid;
+            height: 90vh;
+            width: 100vw;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 15% 1fr 15%;
+            grid-template-areas:
+                "header header header header"
+                "sidebar main main main"
+                "footer footer footer footer"
+
+        }
+
+        @media screen and (min-width: 400px) and (max-width: 599px) {
+            .footer {
+                display: none;
+            }
+
+            .conteiner {
+                display: grid;
+                height: 90vh;
+                width: 100vw;
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 15% 1fr 15%;
+                grid-template-areas:
+                    "header header"
+                    "sidebar main "
+
+            }
+        }
+
+        @media screen and (max-width: 399px) {
+            .footer {
+                display: none;
+            }
+
+            .main {
+                height: 30vh;
+            }
+
+            .header {
+                height: 30vh;
+            }
+
+            .sidebar {
+                height: 30vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Адаптивность</h1>
+    <div class="conteiner">
+        <header class="header">header</header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main">content </main>
+        <footer class="footer">footer
+        </footer>
+    </div>
+</body>
+
+</html>
