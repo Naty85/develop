@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    #container {
+  display: grid;
+  color: white;
+  background-color: lightgray;
+  font-family: sans-serif;
+   column-gap: 30px;
+  /*grid-template-areas: 
+  "el1 el1 el1 el1 el1"
+  "el2 el3 el3 el3 el4"
+  "el5 el5 el5 el6 el6"
+  "el7 el8 el8 el8 el9"*/
+  grid-template-rows: [header-start] 10% [header-end];
+    }
+
+    .el1{
+grid-area:el1;
+grid-row: header-start;
+grid-column: 1 / -1;
+    }
+    .el2{
+grid-area:el2;
+grid-row: 2;
+grid-column: sidebar-start / sidebar-end;
+    }
+    .el3 {
+        grid-area:el3;
+    }
+    .el4 {
+        grid-area:el4;
+    }
+    .el5{
+        grid-area:el5;
+    } 
+    .el6 {
+        grid-area:el6;
+    }
+    .el7{
+        grid-area:el7
+    }
+    .el8{
+        grid-area:el8
+    }
+    .el9{
+        grid-area:el9;
+    }
+  
+
+.el1, .el2, .el3, .el4, .el5, .el6, .el7, .el8, .el9  {
+  padding: 1.5rem;
+  background-color: dimgray;
+  border: 1px darkgray solid;
+  align-content: space-between;
+}
+
+
+    </style>
+</head>
+<body>
+    <h>HW</h>
+    <div id="container">
+        <div class="el1">БАДЫ</div>
+        <div class="el2">ВИТАМИН Д</div>
+        <div class="el3">ОМЕГА3</div>
+        <div class="el4">FOUR</div>
+        <div class="el5">FIVE</div>
+        <div class="el6">SIX</div>
+        <div class="el7">SEVEN</div>
+        <div class="el8">EIGHT</div>
+        <div class="el9">NINE</div>
+
+
+     
+   
+</div>
+</body>
+</html>
