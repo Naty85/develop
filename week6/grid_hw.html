@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,89 +8,96 @@
     <title>Document</title>
 
     <style>
-
- .conteiner{
-    display: grid;
-    background-color: salmon;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas: "header header header header header"
-    "main main main main aside"
-    "main1 main1 main2 main2 aside"
-    "main3 main3 main3 main3 aside";    ;
-    height: 90vh;
- }
-
-
- .footer{
-     display: grid;
-     background-color: rgb(250, 57, 35);
-     grid-template-columns: 25% 25% 25% 25%;
-     grid-template-rows: 25% 25% 25% 25%;
-     grid-template-areas: "footer1 footer2 footer3 footer4";
-     height: 10vh;
-
- }
-   
-
-.header{
-    grid-area:header;
-    text-align: center;
-    background-color: aqua;
-}
-
-.main{
-    grid-area:main;
-    text-align: center;
-    background-color: maroon;
-    
-}
-.main1{
-    grid-area:main1;
-    text-align: center;
-    background-color: skyblue;
+        .conteiner {
+            display: grid;
+            background-color: salmon;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-areas: "header header header header header"
+                "main main main main aside"
+                "main1 main1 main2 main2 aside"
+                "main3 main3 main3 main3 aside";
+            ;
+            height: 90vh;
+        }
 
 
-}
-.main2{
-    grid-area:main2;
-    text-align: center;
-    background-color: orange;
+        .footer {
+            display: grid;
+            background-color: rgb(250, 57, 35);
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-areas: "footer1 footer2 footer3 footer4";
+            height: 10vh;
+        }
 
-}
-.main3{
-    grid-area:main3;
-    text-align: center;
-    background-color: greenyellow;
 
-}
-.aside{
-    grid-area:aside;
-    text-align: center;
-}
-.footer1{
-    grid-area:footer1;
-    text-align: center;
-}
+        .header {
+            grid-area: header;
+            text-align: center;
+            background-color: aqua;
+        }
 
-}
-.footer2{
-    grid-area:footer2;
-    text-align: center;
-}
-.footer3{
-    grid-area:footer3;
-    text-align: center;
-}
-.footer4{
-    grid-area:footer4;
-    text-align: center;}
+        .main {
+            grid-area: main;
+            text-align: center;
+            background-color: maroon;
 
+        }
+
+        .main1 {
+            grid-area: main1;
+            text-align: center;
+            background-color: skyblue;
+
+
+        }
+
+        .main2 {
+            grid-area: main2;
+            text-align: center;
+            background-color: orange;
+
+        }
+
+        .main3 {
+            grid-area: main3;
+            text-align: center;
+            background-color: greenyellow;
+
+        }
+
+        .aside {
+            grid-area: aside;
+            text-align: center;
+        }
+
+        .footer1 {
+            grid-area: footer1;
+            text-align: center;
+        }
+
+        }
+
+        .footer2 {
+            grid-area: footer2;
+            text-align: center;
+        }
+
+        .footer3 {
+            grid-area: footer3;
+            text-align: center;
+        }
+
+        .footer4 {
+            grid-area: footer4;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    
+
     <h>Домашка</h>
     <div class="conteiner">
         <div class="header">Шапка</div>
@@ -106,7 +114,8 @@
         <div class="footer3">Подвал3</div>
         <div class="footer4">Подвал4</div>
     </div>
-    
-   
+
+
 </body>
+
 </html>
