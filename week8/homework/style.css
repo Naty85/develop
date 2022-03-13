@@ -1,0 +1,22 @@
+.header,
+footer {
+    background-color: rgba(3, 3, 3, 0.418);
+
+}
+
+
+.main {
+
+    width: 90%;
+    display: flex;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgb(236, 234, 234);
+}
+
+.card-group {
+    display: flex;
+    width: 90%;
+    margin: 20px;
+    padding: 50px;
+}
